@@ -12,7 +12,7 @@ app = func.FunctionApp()
 def TimerTrigger(myTimer: func.TimerRequest) -> None:
 
     # Azure IoT Hub 연결 문자열
-    CONNECTION_STRING = "HostName=PNP-DATA-IOT-C01.azure-devices.net;DeviceId=DeviceId01;SharedAccessKey=GDxpRXeR4+Jis9LdaqwVnCSArXLFC6KDCAIoTIj037g="
+    CONNECTION_STRING = ""
 
     # 메시지를 전송할 디바이스 클라이언트 생성
     device_client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
